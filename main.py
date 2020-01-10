@@ -10,7 +10,7 @@ def _news_scrapper(news_site_uid):
     host = config()['news_sites'][news_site_uid]['url']
     
     logging.info('Beggining scrapper for {}'.format(host))
-
+    return host
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
